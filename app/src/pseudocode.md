@@ -99,12 +99,6 @@ const Name = ({ name }) => {
       <div className = "card-body">
         {name.name %% <h1 className = 'card-title'>{name.name}</h1>}
                 <div><strong>Effect:</strong> {elixir.effect}</div>
-        <div><strong>Side Effects:</strong> {elixir.sideEffects}</div>
-        <div><strong>Characteristics:</strong> {elixir.characteristics}</div>
-        <div><strong>Ingredients:</strong> {elixir.ingredients.map((ingredient) => ingredient.name).join(', ')}</div>
-        <div><strong>Time:</strong> {elixir.time}</div>
-        <div><strong>Difficulty:</strong> {elixir.difficulty}</div>
-        <div><strong>Manufacturer:</strong> {elixir.manufacturer}</div>
       </div>
     </div>
   )
