@@ -2,7 +2,7 @@
 
 ## MoSCoW
 - Must-Haves: Wireframe (styling), Restaurant Name/Address/HOA, Fetch data using API and Axios, dynamic menu of atleast 15 items, accordion design, each menu item as a card, manage state
-- Should-Haves: list item and price, setLocal Storage
+- Should-Haves: list item and price, setLocal Storage, logo, address in footer
 - Could-Haves: Emojis/Images for different foods, varied styling for different foods
 - Won't-Haves: Change menu display based on day or time of day, labels for various foods such as Gluten-Free, Vegan, etc.
 
@@ -11,10 +11,11 @@
 - Atoms
     * Resturant Name as Header
     * Address and HOA on page
-    * 
+      
 - Molecules
     * Accordion design
     * Card design
+      
 - Organisms
     * Dynamic menu items
 
@@ -27,16 +28,27 @@
 
 
 ## Solutions
-- My componenets will be broken down into separate React files. One for card design, one for accordion design, one for API call, one for nav bar (will include Menu), one for Menu Display
+- My componenets will be broken down into separate React files:
+  * One defaul called Menu,
+  * one for card design,
+  * one for accordion design,
+  * one for nav bar (will include Menu),
+  * one for Menu Display(RenderMenu)
+ 
+    
 - Arrange them into separate files with App,js importing rest of the files
-- Fetch data through component called FetchData
+- Fetch data through Axios API call (see example code below)
 - Display data through componenet called RenderMenu
-- use SetState to....
+- use SetState to manage State
 ## Procedural
 
 ### Begin
-
 ### Init
+- Create Componenets
+- Organize components by wireframe design
+- Build UI without any dynamic elements
+- Identify where state should do
+- Add state
 
 
 
@@ -48,7 +60,7 @@
 import React, { useEffect, useState } from 'react';
 import { getLocalStorage, setLocalStorage } from ;
 import axios from 'axios';
-import Boostrap from 'bootstrap'
+import Bootstrap from 'bootstrap'
 
 function Setup Exemplar:
 
