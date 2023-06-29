@@ -1,20 +1,18 @@
  import './App.css';
 import { Header } from './Header.js';
 import { NavBar } from './NavBar';
-
+import { Menu } from './Menu.js';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
+      <div className="App-header">
             <NavBar />
             <br />
             <Header />
-        </p>
-      </header>
-        <p>
+      </div>
+        <div className='main'>
           <Menu />
-        </p>
+        </div>
     </div>
   );
 }

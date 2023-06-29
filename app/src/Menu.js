@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from 'axios';
 
-export default function Menu() {
+export function Menu() {
     const [menuItems, setMenuItems] = useState([]);
     const [loading, setLoading] = useState(true);
 
@@ -25,12 +25,13 @@ export default function Menu() {
     return (
         <>
             <h2>Menu</h2>
-            <ul>
-                menuItems.map ( item => (
-                    <li key= {menuItems.id}>{menuItems.name}</li>
+                {menuItems.map (item => (
+                    <div key= {menuItems.id}>
+                        <h3>{item.title}</h3>
+                        <p>Price: {item.price}</p>
+                        <p>Description: {item.description}</p>
+                    </div>
                 ))}
-            </ul>
-        
         </>
     )
 }
