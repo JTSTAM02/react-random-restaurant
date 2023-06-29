@@ -1,16 +1,37 @@
 # Restaurant Menu
 
 ## MoSCoW
-- Must-Haves: Wireframe (styling), Restaurant Name/Address/HOA, Fetch data using API and Axios, dynamic menu of atleast 15 items, accordion design, each menu item as a card, manage state
-- Should-Haves: list item and price, setLocal Storage, logo, address in footer
-- Could-Haves: Emojis/Images for different foods, varied styling for different foods
-- Won't-Haves: Change menu display based on day or time of day, labels for various foods such as Gluten-Free, Vegan, etc.
+- Must-Haves:
+   - Wireframe (styling),
+   - Restaurant Name/Address/HOA,
+   - Fetch data using API and Axios, 
+   - Dynamic menu of atleast 15 items, (choose breakfast foods)
+   - Accordion design,
+   - Each menu item as a card,
+   - Manage state
+
+- Should-Haves:
+   - List item and price,
+   - setLocal Storage, 
+   - Logo,
+   - Address in footer
+ 
+   
+- Could-Haves:
+   - Emojis/Images for different foods,
+   - Varied styling for different foods
+
+- Won't-Haves:
+   - Change menu display based on day or time of day,
+   - Labels for various foods such as Gluten-Free, Vegan, etc.
 
 
 ## Atomic Design Principles
 - Atoms
     * Resturant Name as Header
     * Address and HOA on page
+    * Menu Descriptions
+    * Price of Items and Item Name
       
 - Molecules
     * Accordion design
@@ -40,19 +61,33 @@
 - Fetch data through Axios API call (see example code below)
 - Display data through componenet called RenderMenu
 - use SetState to manage State
+
+## Variables
+- API URL is https://www.jsonkeeper.com/b/MDXW 
+
 ## Procedural
+
+
+1. Create Heading Componenet (display Restaurant Name and Address and Hours of Operation
+2. Create navbar Component (display above Heading Component)
+      * Navbar should include link for Menu
+3. Create menu component (dynamically display JSON date)
+
 
 ### Begin
 ### Init
-- Create Componenets
-- Organize components by wireframe design
+- Create Componenets (See Procedural)
+- Organize components by wireframe design (orgnize logically from top to bottom)
 - Build UI without any dynamic elements
-- Identify where state should do
+- Identify where state should go (dynamic elements, anything involving memory such as setLocalStorage)
 - Add state
 
-
+### End
 
 ## Functional
+
+
+
 
 ## Object Oriented
 
