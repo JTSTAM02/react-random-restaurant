@@ -1,23 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import { Header } from './Header.js';
+import { NavBar } from './NavBar';
+import { Menu } from './Menu.js';
+import { useState } from 'react';
+import { SectionMenu } from './SectionMenu';
 
-function App() {
+export function App() {
+
+const [selectedSection, setselectedSection] = useState(null);
+
+const handleSectionClick = (section) => {
+  setselectedSection(section);
+};
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="App-header">
+            <NavBar handleSectionClick={handleSectionClick} />
+            <br />
+            <Header />
+      </div>
+        <div className='main'>
+          <Menu handleSectionClick={selectedSection}/>
+        </div>
     </div>
   );
 }
