@@ -9,7 +9,6 @@ export function App() {
       <div className="App-header">
             <NavBar />
             <br />
-            <Header />
       </div>
         <div className='main'>
           <Menu />
