@@ -70,7 +70,7 @@
 
 1. Create Heading Componenet (display Restaurant Name and Address and Hours of Operation
 2. Create navbar Component (display above Heading Component)
-      * Navbar should include link for Menu
+      * Navbar should include link for Menu Sections such as Breakfast, Brunch, Lunch, and Extras
 3. Create menu component (dynamically display JSON date)
 
 
@@ -85,8 +85,48 @@
 ### End
 
 ## Functional
+export default function Header() {
+return (
+<>
+   <h1>Restaurant Name</h1>
+   <h3>Restaurant Address</h3>
+   <h3>Hours of Operation</h3>
+</>
+}
 
 
+export default function NavBar() {
+   return(
+   {[This link](https://retool.com/blog/building-a-react-navbar/) includes directions for navbar in React}
+   )
+}
+
+export default function Menu() {
+   return (
+   <>
+    const URL = 
+    axios.get(URL)
+      .then(res => {
+        const meal = res.data.meals;
+        if(typeof meal === 'object'){
+          this.setState({ meal })
+        }
+      })
+      .catch(error => {
+        console.log(error);
+      });
+}
+render() {
+    return (
+      <div className="App">
+      </div>
+    );
+  }
+}
+Example code found [here](https://medium.com/@prezshaikh/build-a-food-listing-app-with-reactjs-d1471d9ef866)
+   </>
+   )
+}
 
 
 ## Object Oriented
@@ -139,6 +179,7 @@ const Name = ({ name }) => {
   )
 }
 
+Example code found from React-to-React project
 
 ReactDOM.render(< FunctionName />, document.getElementbyId('root));
       
