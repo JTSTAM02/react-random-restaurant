@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from 'axios';
 
-export function Menu({ selectedSection }) {
+export function Menu() {
     const [menuItems, setMenuItems] = useState([]);
     const [loading, setLoading] = useState(true);
 
@@ -25,7 +25,7 @@ export function Menu({ selectedSection }) {
         )
     }
 
-    const filteredItems = menuItems.filter( item => item.category === selectedSection);
+    const filteredItems = menuItems.filter( item => item.category === "Breakfast");
 
     return (
         <>
