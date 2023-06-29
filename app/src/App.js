@@ -1,17 +1,27 @@
- import './App.css';
+import './App.css';
 import { Header } from './Header.js';
 import { NavBar } from './NavBar';
 import { Menu } from './Menu.js';
-function App() {
+import { useState } from 'react';
+import { SectionMenu } from './SectionMenu';
+
+export function App() {
+
+const [selectedSection, setselectedSection] = useState(null);
+
+const handleSectionClick = (section) => {
+  setselectedSection(section);
+};
+
   return (
     <div className="App">
       <div className="App-header">
-            <NavBar />
+            <NavBar handleSectionClick={handleSectionClick} />
             <br />
             <Header />
       </div>
         <div className='main'>
-          <Menu />
+          <Menu handleSectionClick={selectedSection}/>
         </div>
     </div>
   );

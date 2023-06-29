@@ -1,6 +1,6 @@
 .App {
-  background-color: aqua;
-  color: black;
+  background-color: black;
+  color: white;
   text-align: center;
 }
 
@@ -11,7 +11,8 @@
 }
 
 .App-header {
-  background-color: gray;
+  background-color: darkred;
+  color: white;
   min-height: 100px;
   display: flex;
   flex-direction: column;
