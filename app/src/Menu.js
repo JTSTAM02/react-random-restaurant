@@ -24,12 +24,14 @@ export function Menu() {
     }
     return (
         <>
-            <h2>Menu</h2>
+            <h1><u>Menu</u></h1>
                 {menuItems.map (item => (
                     <div key= {menuItems.id}>
-                        <h3>{item.title}</h3>
-                        <p>Price: {item.price}</p>
-                        <p>Description: {item.description}</p>
+                        <h2>{item.title}</h2>
+                        <h4>Category: {item.category}</h4>                        
+                        <h5>Description: {item.description}</h5>
+                        <h6>{item.price}</h6>
+                        <br />
                     </div>
                 ))}
         </>
