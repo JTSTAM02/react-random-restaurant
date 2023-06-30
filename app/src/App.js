@@ -1,5 +1,4 @@
 import './App.css';
-import { Header } from './Header.js';
 import { NavBar } from './NavBar';
 import { Menu } from './Menu.js';
 
@@ -9,7 +8,6 @@ export function App() {
       <div className="App-header">
             <NavBar />
             <br />
-            <Header />
       </div>
         <div className='main'>
           <Menu />
