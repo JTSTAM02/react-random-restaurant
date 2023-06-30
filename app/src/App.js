@@ -1,5 +1,4 @@
 import './App.css';
-import { Header } from './Header.js';
 import { NavBar } from './NavBar';
 import { Menu } from './Menu.js';
 

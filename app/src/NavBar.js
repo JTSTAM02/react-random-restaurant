@@ -4,6 +4,11 @@ import { LunchMenu } from './LunchMenu';
 import { DinnerMenu } from './DinnerMenu';
 import { AppetizerMenu } from './AppetizerMenu';
 import { HomeMenu } from './HomeMenu'
+import 'jquery';
+import 'popper.js';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.min.js'
+
 
 export function NavBar() {
   const [activeLink, setActiveLink] = useState('home');
@@ -14,24 +19,8 @@ export function NavBar() {
 
   return (
     <>
-      <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link
-          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-          rel="stylesheet"
-        />
-        <link
-          href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
-          rel="stylesheet"
-        />
-        <title>NavBar</title>
-        <script
-          src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-          defer
-        ></script>
-      </head>
-      <nav className="navbar navbar-expand-md bg-body">
+
+      <nav className="navbar navbar-expand-lg bg-body">
         <div className="container-fluid">
           <button
             className="navbar-toggler"
@@ -45,10 +34,10 @@ export function NavBar() {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div
-            className="collapse navbar-collapse"
+            className="collapse navbar-collapse centered"
             id="navbarSupportedContent"
           >
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul className="navbar-nav">
               <li className="nav-item">
                 <button
                   className={`nav-link btn btn-link ${
